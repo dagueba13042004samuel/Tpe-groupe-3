@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float carre(float r)
+{
+return r*r;
+}
+int main()
+{
+    float  a;
+    printf("entrer un nombre\n");
+    scanf("%f",&a);
+    printf("le carre du nombre saisie est %f",carre(a));
+    return 0;
+}
