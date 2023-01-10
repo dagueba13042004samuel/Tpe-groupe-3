@@ -1,0 +1,16 @@
+include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int r;
+    float v;
+    printf("entrer la valeur du rayon de votre sphere\n");
+    scanf("%d",&r);
+    v=(4*r*r*3.14*r)/3;
+    printf("le volume de votre sphere est de %f",v);
+
+    return 0;
+}
+
