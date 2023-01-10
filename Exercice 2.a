@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    float x,y,z;
+    printf("entrer une certaine valeur x\n");
+    scanf("%f",&x);
+     printf("entrer encore une autre y \n");
+    scanf("%f",&y);
+    z=x;
+    x=y;
+    y=z;
+    printf("les contenus de x et y ont ete echangees,x=%f et y=%f",x,y);
+
+    return 0;
+}
+
