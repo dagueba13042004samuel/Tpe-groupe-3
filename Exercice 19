@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+typedef struct date
+{
+    int jour;
+    int mois;
+    int annees;
+}
+date;
+    struct date date1,date2;
+bool compare(struct date date1,struct date date2){
+  int  a=date2.annees;
+  int  b=date1.annees;
+  int c=date2.mois;
+  int   d=date1.mois;
+  int  e=date2.jour;
+  int f=date1.jour;
+        if(a>b)
+    {
+      return true;
+    }
+        if(a<b)
+    {
+return false;
+    }
+ while(a==b)
+    {
+        if(c>d)
+      {
+       return 1;
+      }
+        if(c<d)
+         {
+           return false;
+         }
+        if(c==d)
+        {
+         if(e>f)
+            {
+          return true;
+            }
+         else
+          {
+          return false;
+           }
+    }
+}
+}
+
+int main()
+    {
+
+
+    printf("entrer la premiere date a comparer du style JJ/MM/AA\n");
+         scanf("%d%d%d",&date1.jour,&date1.mois,&date1.annees);
+          printf("entrer la deuxieme date comparer du style JJ/MM/AA\n");
+         scanf("%d%d%d",&date2.jour,&date2.mois,&date2.annees);
+  printf("%d   \n",compare(date1,date2));
+
+return 0;
+}
+
