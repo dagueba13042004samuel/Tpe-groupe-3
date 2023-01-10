@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+      {
+    int s,i,a;
+    printf("entrer la premiere valeur a sommer\n");
+    scanf("%d",&a);
+    s=a;
+    i=0;
+while(a!=0)
+    {
+
+        printf("entrer le nombre suivant\n");
+        scanf("%d",&a);
+        s=s+a;
+        i=i+1;
+    }
+    printf("la somme des valeurs sasis donne %d",s);
+    return 0;
+   }
